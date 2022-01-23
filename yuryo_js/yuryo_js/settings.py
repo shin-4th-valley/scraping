@@ -1,4 +1,4 @@
-# Scrapy settings for scrapySplash project
+# Scrapy settings for yuryo_js project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapySplash'
+BOT_NAME = 'yuryo_js'
 
-SPIDER_MODULES = ['scrapySplash.spiders']
-NEWSPIDER_MODULE = 'scrapySplash.spiders'
-
-
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'scrapySplash (+http://www.yourdomain.com)'
+SPIDER_MODULES = ['yuryo_js.spiders']
+NEWSPIDER_MODULE = 'yuryo_js.spiders'
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -28,6 +24,9 @@ SPLASH_URL = 'http://localhost:8050/'
 
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+
+# Crawl responsibly by identifying yourself (and your website) on the user-agent
+#USER_AGENT = 'yuryo_js (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -58,13 +57,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapySplash.middlewares.ScrapysplashSpiderMiddleware': 543,
+#    'yuryo_js.middlewares.YuryoJsSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapySplash.middlewares.ScrapysplashDownloaderMiddleware': 543,
+#    'yuryo_js.middlewares.YuryoJsDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -76,7 +75,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'scrapySplash.pipelines.ScrapysplashPipeline': 300,
+#    'yuryo_js.pipelines.YuryoJsPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

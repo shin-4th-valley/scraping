@@ -6,7 +6,7 @@
 import scrapy
 
 
-class ScrapysplashItem(scrapy.Item):
+class YuryoJsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
