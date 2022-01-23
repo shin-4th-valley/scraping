@@ -10,7 +10,7 @@ import datetime
 browser = webdriver.Chrome()
 browser.implicitly_wait(3)
 
-first_url = "https://jinzai.hellowork.mhlw.go.jp/JinzaiWeb/GICB101010.do?screenId=GICB101010&action=initDisp"
+first_url = "https://jinzai.hellowork.mhlw.go.jp/JinzaiWeb/GICB101010.do?action=initDisp&screenId=GICB101010"
 browser.get(first_url)
 time.sleep(1)
 print("accessed home page")
